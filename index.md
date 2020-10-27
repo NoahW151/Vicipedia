@@ -1,2 +1,2 @@
-## Welcome to Vicipedia!
-# The latin grammar encyclopedia!
+# Welcome to Vicipedia!
+### The latin grammar encyclopedia!
