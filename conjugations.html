@@ -19,6 +19,18 @@
   
 </style>
 </head>
+<script>
+  function onSubmit()
+  {
+    var form = document.getElementById("conjform").value;
+    if(form == 1)
+    {
+      var verb = document.getElementById("verb").value;
+      verb = verb.replace(verb.slice(verb.length - 3), "");
+      document.getElementById("firstsingularindicativepresent").innerHTML = verb + "o";
+    }
+  }
+</script>
 
 <title>Vicipedia</title>
 <center><h3 style="font-size:200%;">Vicipedia</h3></center>
@@ -42,7 +54,7 @@ Conjugate a verb (in development):
 <br>
 <br>
 Select a conjugation form: 
-<select name="conjugationform" id = "form">
+<select name="conjugationform" id = "conjform">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
@@ -51,7 +63,7 @@ Select a conjugation form:
 <br>
 Enter a verb in infinitive form:
 <input id="verb"></input>
-<button id="submitbutton">Submit</button>
+<button id="submitbutton" onclick="onSubmit()">Submit</button>
 <br>
 Indicative
 <table style="width:100%">
