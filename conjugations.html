@@ -27,7 +27,16 @@
     {
       var verb = document.getElementById("verb").value;
       verb = verb.replace(verb.slice(verb.length - 3), "");
+      
       document.getElementById("firstsingularindicativepresent").innerHTML = verb + "o";
+      document.getElementById("firstsingularindicativefuture").innerHTML = verb + "abo";
+      document.getElementById("firstsingularindicativeimperfect").innerHTML = verb + "abam";
+      document.getElementById("firstsingularindicativepastperfect").innerHTML = verb + "avi";
+      
+      document.getElementById("secondsingularindicativepresent").innerHTML = verb + "as";
+      document.getElementById("secondsingularindicativefuture").innerHTML = verb + "abis";
+      document.getElementById("secondsingularindicativeimperfect").innerHTML = verb + "abas"
+      document.getElementById("secondsingularindicativepastperfect").innerHTML = verb + "avisti";
     }
   }
 </script>
